@@ -7,11 +7,90 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>Konversi Suhu - irgi ahmad fahrezi</h1>
+    </header>
 
-    <main></main>
+    <main>
+      <!-- introduction  -->
+      <section>
+        <p>Selamat datang di web konversi suhu !!</p>
+      </section>
 
-    <footer></footer>
+      <!-- form konversi suhu -->
+      <form action="">
+        <div class="section-item">
+          <label for="">Celcius (&deg;C):</label>
+        </div>
+
+        <div class="section-item">
+          <textarea id="konversi-input"></textarea>
+        </div>
+
+        <!-- Form Action -->
+        <div class="section-item">
+          <button class="bg-1">Konversi</button>
+          <button class="bg-2">Reset</button>
+          <button class="bg-3">Reverse</button>
+        </div>
+      </form>
+
+      <section class="section-content">
+        <!-- form konversi suhu -->
+      <form action="">
+        <div class="section-item">
+          <label for="result-input">Farenheit (&deg;F):</label>
+        </div>
+
+        <div class="section-item">
+          <textarea id="result-input" readonly></textarea>
+        </div>
+      </section>
+      <!-- Hasil konversi suhu -->
+      <section></section>
+
+      <!-- Penjelasan -->
+      <section class="section-content">
+        <!-- form konversi suhu -->
+      <form action="">
+        <div class="section-item">
+          <label for="calculate-detail">Cara Kalkulasi</label>
+        </div>
+
+        <div class="section-item">
+          <textarea id="calculate-detail" readonly></textarea>
+        </div>
+      </section>
+
+      <!-- informasi tambahan -->
+      <section class="section-content">
+        <header>
+          <h1>Cara Dari Celcius ke Farenheit (&deg;C) ke Farenheit (&deg;F)</h1>
+
+          <hr />
+
+          <!-- Konten Informasi -->
+          <article>
+            <p>Suhu <span class="formula">S</span> dalam derajat Farenheit (&deg;F) </p>
+            
+            <!-- Formula -->
+            <div class="formula">
+              S<sub>(&deg;F)</sub> = (S <sub>(&deg;C)</sub> x 9/5) + 32
+            </div>
+            <div>
+              atau
+            </div>
+            <div class="formula">
+              S<sub>(&deg;F)</sub> = (S <sub>(&deg;C)</sub> x 1,8) + 32
+            </div>
+          </article>
+        </header>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Irgi. All rights reserved</p>
+    </footer>
   </body>
 </html>
 <script src="js/script.js"></script>
