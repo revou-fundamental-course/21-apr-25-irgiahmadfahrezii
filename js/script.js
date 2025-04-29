@@ -44,7 +44,7 @@ btnConversion.onclick = (event) => {
     if (celcToFaren) {
 
         tempDeg = nCelcius.value;
-        if(tempDeg == "" || tempDeg == null){
+        if(tempDeg == ""){
             showError("Mohon Isi Nilai Celcius") ;
             resetForm() ;
         }else{
@@ -57,7 +57,8 @@ btnConversion.onclick = (event) => {
     } else {
 
         tempDeg = nFarenheit.value;
-        if(tempDeg.value == "" || tempDeg.value == null){
+        console.log(tempDeg) ;
+        if(tempDeg.value == ""){
             showError("Mohon Isi Nilai Fahrenheit") ;
             resetForm() ;
         }else{
