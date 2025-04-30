@@ -42,30 +42,29 @@ btnConversion.onclick = (event) => {
     event.preventDefault();
 
     if (celcToFaren) {
-
-        tempDeg = nCelcius.value;
-        if(tempDeg == ""){
+        temp = nCelcius.value;
+        if(temp === ""){
             showError("Mohon Isi Nilai Celcius") ;
             resetForm() ;
+            return;
         }else{
-            resultTempDeg = calcCelcToFaren(tempDeg);
+            resultTemp = calcCelcToFaren(temp);
 
-            nFarenheit.value = resultTempDeg;
-            cMethod.value = `(${tempDeg} ${degreeSymbol}C x 9/5) + 32 = ${resultTempDeg} ${degreeSymbol}F`
+            nFarenheit.value = resultTemp;
+            cMethod.value = `(${temp} ${degreeSymbol}C x 9/5) + 32 = ${resultTemp} ${degreeSymbol}F`
         }
 
     } else {
-
-        tempDeg = nFarenheit.value;
-        console.log(tempDeg) ;
-        if(tempDeg.value == ""){
+        temp = nFarenheit.value;
+        if(temp === ""){
             showError("Mohon Isi Nilai Fahrenheit") ;
             resetForm() ;
+            return;
         }else{
-            resultTempDeg = calcFarenToCelc(tempDeg);
+            resultTemp = calcFarenToCelc(temp);
 
-            nCelcius.value = resultTempDeg;
-            cMethod.value = `(${tempDeg} ${degreeSymbol}F - 32) * 5/9 = ${resultTempDeg} ${degreeSymbol}C`;
+            nCelcius.value = resultTemp;
+            cMethod.value = `(${temp} ${degreeSymbol}F - 32) * 5/9 = ${resultTemp} ${degreeSymbol}C`;
         }
 
     }
